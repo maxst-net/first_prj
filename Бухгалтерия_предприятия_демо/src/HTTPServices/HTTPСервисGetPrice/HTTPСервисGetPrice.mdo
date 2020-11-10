@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b118a1ab-cb82-4220-a74f-ceed7f532088">
+  <name>HTTPСервисGetPrice</name>
+  <synonym>
+    <key>ru</key>
+    <value>HTTPСервис get price</value>
+  </synonym>
+  <rootURL>Prices</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="435a9128-e94b-44a3-a34c-57908e012a06">
+    <name>Шаблон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон</value>
+    </synonym>
+    <template>/{CustomerCode}/{PriceTypeCode}</template>
+    <methods uuid="aed32df6-4a36-44e4-bca5-2f1d03eb3dc6">
+      <name>GetPrice</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get price</value>
+      </synonym>
+      <handler>ШаблонGetPrice</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>
